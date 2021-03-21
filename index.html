@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devMeasure</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+</head>
+<body>
+    <main class="container">
+        <section class="first-section"></section>
+        <div class="main-image mx-auto ">
+            <img src="calculator.png" alt="" class="img-fluid">
+        </div>
+        <div class="main-title text-center">
+            <h1>Dev<span class="word-hightlight">Meas</span>ure</h1>
+        </div>
+    </section>
+    <section class="second-section my-3">
+        <div class="from-select my-3">
+            <select placeholder="from"class="form-select form-select-sm from-option mx-auto " aria-label=".form-select-sm example" onchange="convert()">
+                <option selected >From</option>
+                <option value="pixel">pixel</option>
+                <option value="rem">rem</option>
+                <option value="point">point</option>
+              </select>
+        </div>
+        <div class="from-input my-3 d-flex justify-content-center">
+            <input type="text" class="from-input-value  text-center" placeholder="---" oninput="convert()" onmouseover="convert()">
+        </div>
+        <!----------------------------------------------------------------------------------------------------------------------->
+        <div class="to-select mt-5">
+            <select class="form-select form-select-sm to-option mx-auto " aria-label=".form-select-sm example" onchange="convert()">
+                <option selected >To</option>
+                <option value="pixel">pixel</option>
+                <option value="rem">rem</option>
+                <option value="point">point</option>
+              </select>
+        </div>
+        <div class="to-input my-3  d-flex justify-content-center ">
+            <input  class="to-output-value  text-center">
+            <button class="btn-copy"type="button" onclick="copy()"  ><i class="far fa-copy "></i></button>
+
+        </div>
+    </section>
+    <nav class="navbar fixed-bottom footer ">
+        <div class="container-fluid ">
+          <p class="navbar-brand  mx-auto footer-text mb-auto" href="#">v2.0.All right reserved.Made by <a href="https://www.instagram.com/harjan_04/">harjan04</a></p>
+        </div>
+      </nav>
+    
+    </main>
+    <script src="./javascript/bootstrap.min.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
